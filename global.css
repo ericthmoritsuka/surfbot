@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* font-family: "Alice", serif;
+  font-family: "Nunito", sans-serif; */
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}

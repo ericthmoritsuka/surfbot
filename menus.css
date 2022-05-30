@@ -1,0 +1,66 @@
+.barraFuncionamento {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: white;
+  background-color: #1188ee;
+  padding: 5px 45px;
+}
+
+.BGmenu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #17222d;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 45px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+}
+
+.separador{
+  content: 'teste';
+  width: 5px;
+  height: 5px;
+  background-color: #17222d;
+  border: 3px solid white;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a:hover{
+  color: #EE2211;
+}
+
+.redUnderline::after {
+  content: '';
+  display: block;
+  background-color: #EE2211;
+  height: 2px;
+  width: 10ch;
+  position: absolute;
+  top: 24px;
+  left: -2px;
+  transition: .3s;
+}
+
+.redUnderline:hover::after{
+  width: 0;
+}

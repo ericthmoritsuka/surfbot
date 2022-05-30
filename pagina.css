@@ -1,0 +1,48 @@
+.BGintro {
+  background: url("./surfbot-assets/bg-intro.jpg") no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding: 300px 0 60px 45px;
+}
+
+.titulo {
+  font-family: "Alice";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #ffffff;
+}
+
+.formIntro {
+  display: flex;
+  align-items: center;
+  padding-right: 45px;
+}
+
+.formIntro input {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #bbccdd;
+  padding: 6px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid white;
+}
+
+.botaoTitulo {
+  display: flex;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  gap: 22px;
+  background-color: #EE2211;
+  border-radius: 0 5px 5px 0;
+  padding: 7px;
+  text-transform: uppercase;
+}
