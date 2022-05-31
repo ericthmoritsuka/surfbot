@@ -1,0 +1,31 @@
+.BGfrase {
+  background: url("./surfbot-assets/foto-quote@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: grid;
+  justify-content: center;
+}
+
+.frase blockquote {
+  padding-top: 136px;
+  margin-bottom: 30px;
+  font-family: "Alice";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 74px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.frase p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 140px;
+}
