@@ -30,6 +30,8 @@
   padding: 12px;
   border-radius: 5px 0 0 5px;
   /* border: 1px solid white; */
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(23, 34, 45, 0.4);
 }
 
 .botaoTitulo {
@@ -41,19 +43,20 @@
   line-height: 25px;
   color: #ffffff;
   gap: 22px;
-  background-color: #EE2211;
+  background-color: #ee2211;
   border-radius: 0 5px 5px 0;
   padding: 12px;
   text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(23, 34, 45, 0.4);
 }
 
-.botaoTitulo::after{
-  content: '';
+.botaoTitulo::after {
+  content: "";
   display: block;
   width: 15px;
   height: 15px;
-  background: url('./surfbot-assets/seta.svg') no-repeat;
-  transition: .2s;
+  background: url("./surfbot-assets/seta.svg") no-repeat;
+  transition: 0.2s;
   place-self: center;
 }
 

@@ -32,6 +32,10 @@ h3 {
   margin: 0px;
 }
 
+input {
+  all: unset;
+}
+
 .detalheCinza {
   color: #99AABB;
 }
