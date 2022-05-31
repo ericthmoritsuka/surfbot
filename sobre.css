@@ -3,7 +3,9 @@
   grid-template-columns: 1fr 1fr;
   padding: 45px 60px;
   padding-bottom: 90px;
-  gap: 130px;
+  gap: 120px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .mapa {

@@ -1,8 +1,12 @@
 .BGintro {
-  background: url("./surfbot-assets/bg-intro.jpg") no-repeat;
+  background: url("./surfbot-assets/bg-intro@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
   display: flex;
-  justify-content: space-between;
   padding: 300px 0 60px 45px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .titulo {
