@@ -1,33 +1,26 @@
 .BGsobre {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 45px 60px;
+  padding: 45px;
   padding-bottom: 90px;
   gap: 120px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.mapa {
-  position: relative;
+.mapaIMG {
+  /* position: relative; */
   z-index: 0;
 }
 
-.mapa::after {
-  content: "";
-  display: block;
+.mapaMapa{
   height: 250px;
-  width: 450px;
-  background: url("./surfbot-assets/mapa.jpg") no-repeat;
-  position: absolute;
-  z-index: 1;
-  top: 480px;
-  left: 25px;
+  width: 400px;
 }
 
 .comoChegar {
-  margin-left: 38px;
-  margin-top: 175px;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 
 .comoChegar h2 {
@@ -142,3 +135,96 @@
   bottom: 1px;
 }
 
+
+@media (max-width:1100px){
+  .BGsobre {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding-bottom: 90px;
+    gap: 90px;
+    margin: 0 auto;
+  }
+
+  .BGmapa{
+    display: grid;
+    justify-content: center;
+  }
+  
+  .comoChegar {
+    margin-top: 45px;
+    gap: 10px;
+  }
+
+  .comoChegar h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  
+  .comoChegar li {
+    font-size: 20px;
+  }
+  
+  .sobre{
+    display: grid;
+    justify-content: center;
+  }
+
+  .sobreTitulo {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 45px;
+    max-width: 20ch;
+    text-align: center;
+  }
+  
+  .sobreVantagens {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .sobreVantagensItem {
+    display: flex;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sobreTexto{
+    text-align: center;
+    max-width: 45ch;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 600px){
+  .sobreVantagensItem::before, .sobreVantagensItem:last-child::after{
+    width: 360px;
+  }
+}
+
+@media (max-width: 500px){
+  .comoChegar h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  .comoChegar li {
+    font-size: 16px;
+  }
+  .sobreTitulo {
+    font-size: 36px;
+  }
+
+  .sobreVantagensItem::before, .sobreVantagensItem:last-child::after{
+    width: 200px;
+  }
+
+  .sobreVantagensItem {
+    gap: 15px; 
+  }
+}

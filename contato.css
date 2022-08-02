@@ -1,0 +1,235 @@
+.BGcontato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: url("./surfbot-assets/bg-icones.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: relative;
+}
+
+.BGcontato::before{
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 477px;
+  display: block;
+  border: 0px solid;
+  border-radius: 5%;
+  background-color: #EFF4F9;
+  top: 173px;
+  place-self: center;
+}
+
+.tituloContato {
+  font-family: "Alice";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #445566;
+  grid-column: 1/-1;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.contato {
+  display: grid;
+  max-width: 470px;
+  margin-left: 45px;
+  gap: 15px;
+  margin-bottom: 48px;
+}
+
+.contato label {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #445566;
+}
+
+.contato input,
+.contato textarea {
+  background: #eff4f9;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px;
+  max-width: 360px;
+}
+
+.btContato {
+  margin-top: 30px;
+  background: #445566;
+  box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+  border-radius: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  max-width: fit-content;
+  padding: 12px 15px;
+  padding-right: 35px;
+  position: relative;
+}
+
+.btContato::after {
+  content: "";
+  position: absolute;
+  background-image: url("./surfbot-assets/seta.svg");
+  width: 12px;
+  height: 12px;
+  top: 18px;
+  right: 10px;
+}
+
+.info {
+  display: grid;
+  font-family: "Nunito";
+  font-style: normal;
+  color: #445566;
+  padding-left: 114px;
+  align-items: center;
+  max-height: 360px;
+  gap: 32px;
+}
+
+.info h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  padding-bottom: 5px;
+}
+
+.info p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.info a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.infoContato{
+  position: relative;
+}
+
+.infoContato::before, .infoContato::after{
+  position: absolute;
+  content: '';
+  width: 220px;
+  height: 2px;
+  display: block;
+  border: 0px solid;
+  border-radius: 5%;
+  background-color: #EFF4F9;
+  place-self: center;
+}
+
+.infoContato::before{
+  top: -20px;
+}
+
+.infoContato::after{
+  bottom: -20px
+}
+
+.btinfoEndereco {
+  position: relative;
+}
+
+.btinfoEndereco::after {
+  content: "";
+  position: absolute;
+  background: url("./surfbot-assets/setaRed.svg");
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  right: -25px;
+}
+
+.infoHorarioTitulo{
+  position: relative;
+}
+
+.infoHorarioTitulo::before{
+  content: "";
+  position: absolute;
+  background: url("./surfbot-assets/circleGreen.svg");
+  width: 8px;
+  height: 8px;
+  top: 7px;
+  left: -10px;
+}
+
+@media (max-width: 900px){
+  .BGcontato::before{
+    height: 2px;
+    width: 400px;
+  }
+
+  .info{
+    position: relative;
+  }
+
+  .info::before{
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 2px;
+    display: block;
+    border: 0px solid;
+    border-radius: 5%;
+    background-color: #EFF4F9;
+    top: -20px;
+    place-self: center;
+  }
+
+  .BGcontato{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 45px;
+  }
+  .contato {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .info {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .btContato {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 500px){
+  .info::before, .BGcontato::before{
+    width: 200px;
+  }
+
+  .tituloContato {
+    font-size: 48px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+}

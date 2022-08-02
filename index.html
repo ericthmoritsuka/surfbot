@@ -13,35 +13,41 @@
 </head>
 
 <body>
-  <div class="barraFuncionamento">
-    <p>Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
+  <header class="BGbarraFuncionamento">
+    <p class="barraFuncionamento">Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
   </div>
   <div class="BGmenu">
-    <div>
-      <img src="./surfbot.svg" alt="" class="logo">
+    <div class="menuStructure">
+      <div>
+        <a href="./"><img src="./surfbot.svg" alt="" class="logo"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#praia">Praia</a></li>
+        <li class="separador"></li>
+        <li><a href="#aulas">Aulas</a></li>
+        <li class="separador"></li>
+        <li><a href="#contato">Contato</a></li>
+        <li class="separador"></li>
+        <li class="redUnderline"><a href="matricula.html">Matricule-se</a></li>
+      </ul>
     </div>
-    <ul class="menu">
-      <li><a href="#praia">Praia</a></li>
-      <li class="separador"></li>
-      <li><a href="#aulas">Aulas</a></li>
-      <li class="separador"></li>
-      <li><a href="#contato">Contato</a></li>
-      <li class="separador"></li>
-      <li class="redUnderline"><a href="matricula.html">Matricule-se</a></li>
-    </ul>
-  </div>
-  <div class="BGintro">
-    <h1 class="titulo">Escola de Surf</h1>
-    <div class="formIntro">
-      <input type="text" placeholder="Email">
-      <div class="botaoTitulo">
-        <a href="matricula.html">Matricule-se</a>
+  </header>
+
+  <section class="BGintro">
+    <div class="intro">
+      <h1 class="titulo">Escola de Surf</h1>
+      <div class="formIntro">
+        <input type="text" placeholder="Email">
+        <div class="botaoTitulo">
+          <a href="matricula.html">Matricule-se</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="BGsobre">
-    <div class="mapa">
-      <img src="./surfbot-assets/foto-galeria.jpg" alt="">
+  </section>
+
+  <section id="praia" class="BGsobre">
+    <div class="BGmapa">
+      <img class="mapaIMG" src="./surfbot-assets/foto-sobre.png" alt="">
       <ul class="comoChegar">
         <h2 class="circuloVermelho">COMO CHEGAR</h2>
         <li class="tracoAzul">Carro <span class="detalheCinza">pela via Lúcio Costa sentido Barra</span></li>
@@ -49,7 +55,7 @@
         <li class="tracoAzul">Metrô <span class="detalheCinza">linha azul sentido Zona Sul</span></li>
       </ul>
     </div>
-    <div class="sobre" id="praia">
+    <div class="sobre">
       <h1 class="sobreTitulo"><span class="detalheAzul">Aulas</span> em uma das melhores praias do <span class="detalheAzul">Rio</span>.</h1>
       <ul class="sobreVantagens">
         <div class="sobreVantagensItem sandalia">
@@ -69,9 +75,9 @@
         <br>Como cidade capital, abriga na zona chamada Plateau, promontório à beira-mar, edifícios públicos e outras construções de importância, como o Palácio Presidencial, construído no fim do século XIX para ser a residência do governador português.
       </p>
     </div>
-  </div>
+  </section>
 
-  <div class="BGaulas">
+  <section id="aulas" class="BGaulas">
     <h1 class="tituloEscuro">Aulas</h1>
     <div class="aulasCards">
       <div class="card um">
@@ -118,13 +124,51 @@
       <p>Possui um grupo com mais de <span class="detalheVermelho">3 pessoas</span>?</p>
       <p>Entre <span class="underlineVermelho">em contato</span> para um desconto personalizado.</p>
     </div>
-  </div>
-  <div class="BGfrase">
+  </section>
+
+  <section class="BGfrase">
     <div class="frase">
       <blockquote>“O surf liberta as<br>ondas de uma vida.”</blockquote>
       <p>Regis Pereira</p>
     </div>
-  </div>
+  </section>
+
+  <section class="BGcontato">
+    <h1 class="tituloContato">Contato</h1>
+    <div class="contato">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email">
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" rows="5" placeholder="Sua mensagem aqui."></textarea>
+      <a class="btContato">ENVIAR MENSAGEM</a>
+    </div>
+    <div class="info">
+      <div class="infoEndereco">
+        <h2>Endereço</h2>
+        <p>Praia Mansa no. 47</p>
+        <p>Rio de Janeiro - RJ</p>
+        <p>Procure a barraca vermelha</p>
+        <a href="" class="btinfoEndereco">VER NO MAPA</a>
+      </div>
+      <div class="infoContato">
+        <h2>E-mail & Telefone</h2>
+        <li><a href="mailto:contato@surfbot.com">contato@surfbot.com</a></li>
+        <li><a href="tel: +552199999999">21 9999-9999</a></li>
+      </div>
+      <div class="infoHorario">
+        <h2 class="infoHorarioTitulo">Horário</h2>
+        <p>De Sexta à Sábado</p>
+        <p>Das 06:00 às 14:00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footerTexto">Projeto elaborado no curso de UI Design Avançado da Origamid. Alguns direitos reservados.</p>
+    <img class="footerIcon" src="/surfbot-assets/surfbot-iconWhite.svg" alt="">
+  </footer>
 
 </body>
 

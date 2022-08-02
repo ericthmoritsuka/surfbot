@@ -2,11 +2,15 @@
   background: url("./surfbot-assets/bg-intro@2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;  
+  background-position: center center;
+}
+
+.intro {
   display: flex;
-  padding: 300px 0 60px 45px;
+  padding: 300px 0 60px 60px;
   justify-content: space-between;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .titulo {
@@ -66,4 +70,49 @@
 
 .botaoTitulo:hover::after {
   transform: translateX(-10px);
+}
+
+@media (max-width: 1100px) {
+  .intro {
+    display: grid;
+    padding: 200px 0 60px 60px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .titulo {
+    font-size: 86px;
+  }
+  
+  .formIntro input {
+    font-size: 14px;
+  }
+  
+  .formIntro{
+    justify-content: center;
+    margin-left: 45px;
+  }
+
+  .botaoTitulo {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px){
+  .intro {
+    padding: 60px;
+  }
+
+  .titulo{
+    font-size: 64px;
+  }
+  .formIntro{
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  .titulo{
+    font-size: 48px;
+  }
 }

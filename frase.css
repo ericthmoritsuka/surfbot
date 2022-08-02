@@ -29,3 +29,15 @@
   text-align: center;
   margin-bottom: 140px;
 }
+
+@media (max-width:700px) {
+  .frase blockquote {
+    font-size: 48px;
+  }
+}
+
+@media (max-width:500px) {
+  .frase blockquote {
+    font-size: 36px;
+  }
+}

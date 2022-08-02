@@ -1,0 +1,35 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #1188EE;
+  align-items: center;
+}
+
+.footerTexto {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-left: 45px;
+  max-width: 50ch;
+}
+
+.footerIcon{
+  width: 21px;
+  height: 37.3px;
+  margin-right: 45px;
+}
+
+@media(max-width: 500px){
+  .footerTexto{
+    font-size: 12px;
+  }
+  .footerIcon{
+    width: 16px;
+    height: 32.3px;
+    margin-right: 45px;
+  }
+}
