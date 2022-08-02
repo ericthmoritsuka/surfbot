@@ -90,6 +90,16 @@
   height: 12px;
   top: 18px;
   right: 10px;
+  transition: 0.2s;
+}
+
+.btContato:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.btContato:hover::after{
+  transform: translateX(-7.5px)
 }
 
 .info {
@@ -158,6 +168,19 @@
   height: 12px;
   top: 3px;
   right: -25px;
+  transition: .2s;
+}
+
+.btinfoEndereco:hover::after{
+  transform: translateX(-7.5px);
+}
+
+.btinfoEndereco:hover{
+  color: #FF3726;
+}
+
+.infoContato a:hover {
+  color: #FF3726;
 }
 
 .infoHorarioTitulo{
