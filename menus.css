@@ -1,4 +1,4 @@
-.BGbarraFuncionamento{
+.BGbarraFuncionamento {
   background-color: #1188ee;
 }
 
@@ -45,8 +45,8 @@
   color: white;
 }
 
-.separador{
-  content: 'teste';
+.separador {
+  content: "teste";
   width: 5px;
   height: 5px;
   background-color: #17222d;
@@ -59,27 +59,27 @@
   position: relative;
 }
 
-.menu a:hover{
-  color: #EE2211;
+.menu a:hover {
+  color: #ee2211;
 }
 
 .redUnderline::after {
-  content: '';
+  content: "";
   display: block;
-  background-color: #EE2211;
+  background-color: #ee2211;
   height: 2px;
   width: 10ch;
   position: absolute;
   top: 24px;
   left: -2px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.redUnderline:hover::after{
+.redUnderline:hover::after {
   width: 0;
 }
 
-@media(max-width: 700px){
+@media (max-width: 700px) {
   .menuStructure {
     display: grid;
     gap: 25px;
@@ -87,7 +87,7 @@
   }
 }
 
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .barraFuncionamento {
     font-size: 10px;
   }
@@ -97,9 +97,9 @@
     line-height: 18px;
     gap: 12px;
   }
-  
-  .separador{
-    content: 'teste';
+
+  .separador {
+    content: "teste";
     width: 3px;
     height: 3px;
   }

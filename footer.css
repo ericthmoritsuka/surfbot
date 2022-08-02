@@ -1,8 +1,8 @@
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   height: 120px;
-  background-color: #1188EE;
+  background-color: #1188ee;
   align-items: center;
 }
 
@@ -17,17 +17,17 @@
   max-width: 50ch;
 }
 
-.footerIcon{
+.footerIcon {
   width: 21px;
   height: 37.3px;
   margin-right: 45px;
 }
 
-@media(max-width: 500px){
-  .footerTexto{
+@media (max-width: 500px) {
+  .footerTexto {
     font-size: 12px;
   }
-  .footerIcon{
+  .footerIcon {
     width: 16px;
     height: 32.3px;
     margin-right: 45px;

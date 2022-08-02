@@ -13,7 +13,7 @@
   z-index: 0;
 }
 
-.mapaMapa{
+.mapaMapa {
   height: 250px;
   width: 400px;
 }
@@ -108,7 +108,7 @@
 
 .sobreVantagensItem {
   display: flex;
-  gap: 30px; 
+  gap: 30px;
   align-items: center;
   position: relative;
 }
@@ -117,26 +117,25 @@
   margin: 45px 0;
 }
 
-.sobreVantagensItem::before{
-  content: '';
+.sobreVantagensItem::before {
+  content: "";
   position: absolute;
   width: 470px;
   height: 2px;
-  background-color: #EFF4F9;
+  background-color: #eff4f9;
   top: 1px;
 }
 
-.sobreVantagensItem:last-child::after{
-  content: '';
+.sobreVantagensItem:last-child::after {
+  content: "";
   position: absolute;
   width: 470px;
   height: 2px;
-  background-color: #EFF4F9;
+  background-color: #eff4f9;
   bottom: 1px;
 }
 
-
-@media (max-width:1100px){
+@media (max-width: 1100px) {
   .BGsobre {
     display: grid;
     grid-template-columns: 1fr;
@@ -146,11 +145,11 @@
     margin: 0 auto;
   }
 
-  .BGmapa{
+  .BGmapa {
     display: grid;
     justify-content: center;
   }
-  
+
   .comoChegar {
     margin-top: 45px;
     gap: 10px;
@@ -160,12 +159,12 @@
     font-size: 28px;
     line-height: 38px;
   }
-  
+
   .comoChegar li {
     font-size: 20px;
   }
-  
-  .sobre{
+
+  .sobre {
     display: grid;
     justify-content: center;
   }
@@ -177,7 +176,7 @@
     max-width: 20ch;
     text-align: center;
   }
-  
+
   .sobreVantagens {
     font-size: 20px;
     line-height: 30px;
@@ -185,7 +184,7 @@
 
   .sobreVantagensItem {
     display: flex;
-    gap: 30px; 
+    gap: 30px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -193,7 +192,7 @@
     padding-bottom: 10px;
   }
 
-  .sobreTexto{
+  .sobreTexto {
     text-align: center;
     max-width: 45ch;
     margin: 0 auto;
@@ -201,18 +200,19 @@
   }
 }
 
-@media (max-width: 600px){
-  .sobreVantagensItem::before, .sobreVantagensItem:last-child::after{
+@media (max-width: 600px) {
+  .sobreVantagensItem::before,
+  .sobreVantagensItem:last-child::after {
     width: 360px;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .comoChegar h2 {
     font-size: 18px;
     line-height: 28px;
   }
-  
+
   .comoChegar li {
     font-size: 16px;
   }
@@ -220,11 +220,12 @@
     font-size: 36px;
   }
 
-  .sobreVantagensItem::before, .sobreVantagensItem:last-child::after{
+  .sobreVantagensItem::before,
+  .sobreVantagensItem:last-child::after {
     width: 200px;
   }
 
   .sobreVantagensItem {
-    gap: 15px; 
+    gap: 15px;
   }
 }

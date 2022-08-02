@@ -83,12 +83,12 @@
   .titulo {
     font-size: 86px;
   }
-  
+
   .formIntro input {
     font-size: 14px;
   }
-  
-  .formIntro{
+
+  .formIntro {
     justify-content: center;
     margin-left: 45px;
   }
@@ -98,21 +98,21 @@
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .intro {
     padding: 60px;
   }
 
-  .titulo{
+  .titulo {
     font-size: 64px;
   }
-  .formIntro{
+  .formIntro {
     display: none;
   }
 }
 
-@media (max-width: 500px){
-  .titulo{
+@media (max-width: 500px) {
+  .titulo {
     font-size: 48px;
   }
 }
