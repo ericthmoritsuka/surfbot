@@ -209,12 +209,17 @@
 
 @media (max-width: 500px) {
   .comoChegar h2 {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .circuloVermelho::before {
+    top: 2px;
+    left: -14px;
   }
 
   .comoChegar li {
-    font-size: 16px;
+    font-size: 12px;
   }
   .sobreTitulo {
     font-size: 36px;
