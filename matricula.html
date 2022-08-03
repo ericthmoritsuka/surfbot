@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./surfbot-assets/surfbot-iconWhite.svg">
+  <title>Surfbot | Matrícula</title>
+</head>
+
+<body>
+  <header>
+    <div class="BGbarraFuncionamento">
+      <p class="barraFuncionamento">Aulas na Praia Mansa de Sexta à Domingo das 06:00 às 14:00</p>
+    </div>
+    <div class="BGmenu">
+      <div class="menuStructure">
+        <div>
+          <a href="./"><img src="./surfbot.svg" alt="" class="logo"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="./#praia">Praia</a></li>
+          <li class="separador"></li>
+          <li><a href="./#aulas">Aulas</a></li>
+          <li class="separador"></li>
+          <li><a href="./#contato">Contato</a></li>
+          <li class="separador"></li>
+          <li class="redUnderline"><a href="matricula.html">Matricule-se</a></li>
+        </ul>
+      </div>
+  </header>
+
+  <section class="BGmatricula">
+    <h1 class="tituloMatricula">Matricule-se</h1>
+    <form class="conteudoMatricula">
+      <div class="formularioMatricula">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Rua, número e bairro">
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep" placeholder="00000-000">
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+          <option value="" disabled selected>Selecione um Estado</option>
+          <option value="pa">PA</option>
+          <option value="pe">PE</option>
+          <option value="rj">RJ</option>
+          <option value="sp">SP</option>
+        </select>
+        <label for="cidade">Cidade</label>
+        <select name="cidade" id="cidade">
+          <option value="" disabled selected>Selecione uma Cidade</option>
+        </select>
+      </div>
+      <div class="pagamentoMatricula">
+        <h2>Forma de Pagamento</h2>
+        <div>
+          <label for="credito">Cartão de Crédito</label>
+          <input type="radio" id="credito" name="pagamento" value="credito">
+          <label for="debito">Cartão de Débito</label>
+          <input type="radio" id="debito" name="pagamento" value="debito">
+          <label for="boleto">Boleto Bancário</label>
+          <input type="radio" id="boleto" name="pagamento" value="boleto">
+        </div>
+        <div>
+          <label for="nomeCartao">Nome no Cartão</label>
+          <input type="text" name="nomeCartao" id="nomeCartao" placeholder="Nome impresso no cartão">
+          <label for="numeroCartao">Número do Cartão</label>
+          <input type="text" name="numeroCartao" id="numeroCartao" placeholder="Número impresso no cartão">
+          <div>
+            <h3>Data de Expiração</h3>
+            <select name="mes" id="mes">
+              <option value="" disabled selected>Mês</option>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+            </select>
+            <select name="ano" id="ano">
+              <option value="" disabled selected>Ano</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+            </select>
+            <label for="codigo">Código de Segurança</label>
+            <input type="text" name="codigo" id="codigo" placeholder="XXX">
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footerTexto">Projeto elaborado no curso de UI Design Avançado da Origamid. Alguns direitos reservados.</p>
+    <img class="footerIcon" src="./surfbot-assets/surfbot-iconWhite.svg" alt="">
+  </footer>
+
+</body>
+
+</html>

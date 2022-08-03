@@ -39,5 +39,6 @@
 @media (max-width: 500px) {
   .frase blockquote {
     font-size: 36px;
+    line-height: 46px;
   }
 }

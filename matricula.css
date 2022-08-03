@@ -1,0 +1,25 @@
+.BGmatricula{
+  background-color: #EFF4F9;
+}
+
+.tituloMatricula {
+  font-family: "Alice";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #445566;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.conteudoMatricula{
+  background-color: #fff;
+  padding: 60px 115px 64px 45px;
+}
+
+.formularioMatricula{
+  display: grid;
+  gap: 5px;
+}

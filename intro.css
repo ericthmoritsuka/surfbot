@@ -113,6 +113,7 @@
 
 @media (max-width: 500px) {
   .titulo {
-    font-size: 48px;
+    font-size: 40px;
+    line-height: 46px;
   }
 }
